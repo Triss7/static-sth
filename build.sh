@@ -1,1 +1,1 @@
-python3 src/main.py "/https://github.com/Triss7/static-sth/"
+python3 src/main.py "/static-sth/"
