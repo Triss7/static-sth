@@ -29,10 +29,10 @@ def generate_page(from_path, template_path, dest_path, basepath):
             template_data = template_data.replace('{{ Content }}', html_text)
 
             print(f'Replacing src="/ with src="{basepath}')
-            template_data = template_data.replace('src="/', 'src="{basepath}')
+            template_data = template_data.replace('src="/', f'src="{basepath}')
 
             print(f'Replacing href="/ with href="{basepath}')
-            template_data = template_data.replace('href="/', 'href="{basepath}')
+            template_data = template_data.replace('href="/', f'href="{basepath}')
 
             print(f'Getting the dirname of {dest_path}')
             dirname = os.path.dirname(dest_path)
