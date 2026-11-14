@@ -6,7 +6,7 @@ from generatepagesrecursive import generate_pages_recursive
 
 def main():
     # Basepath
-    basepath = sys.argv[0] or '/'
+    basepath = sys.argv[1] if len(sys.argv) > 1 else '/'
 
     src_dir = Path(__file__).resolve().parent
     root_dir = src_dir.parent
